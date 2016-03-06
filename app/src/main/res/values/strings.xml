@@ -1,6 +1,38 @@
-<resources>
-    <string name="app_name">MoviesApp</string>
-    <string name="hello_world">Hello world!</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+    <string name="app_name">Movies App</string>
+
     <string name="action_settings">Settings</string>
-    <string name="title_activity_movie_detail">MovieDetailActivity</string>
+
+    <string name="title_activity_detail">Movies Detail</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="label_trailer">Trailers:</string>
+    <string name="label_review">Reviews:</string>
+    <string name="label_favorite">MARK AS FAVOURITE</string>
+
+    <string name="format_rating"><xliff:g id="average">%1$1.0f</xliff:g>/10 out of <xliff:g id="count">%2$1d</xliff:g> reviews</string>
+
+    <string name="pref_order_by_key">pref_order_by</string>
+    <string name="pref_order_by_label">Order by</string>
+    <string name="pref_order_by_default">popularity.desc</string>
+    <string name="pref_order_by_popularity_label">Most Popular</string>
+    <string name="pref_order_by_vote_average_label">Highest-Rated</string>
+    <string name="pref_order_by_favorite_label">My Favorites</string>
+    <string name="pref_order_by_popularity">popularity.desc</string>
+    <string name="pref_order_by_vote_average">vote_average.desc</string>
+    <string name="pref_order_by_favorite">favorite</string>
+    <string name="themoviedb_api_key">bca7f4c7bdc76689ded9e36afc61b482</string>
+    <string name="action_order_by_popularity">Most Popular</string>
+    <string name="action_order_by_vote_average">Highest Rated</string>
+    <string name="action_order_by_favorite">My Favorites</string>
+    <string name="action_share">Share</string>
+    <string name="title_movie">title of the movie</string>
+    <string name="mark_favourite">Mark the movie as favourite</string>
+    <string name="msg_network_not_available">Please connect to network and open again!</string>
+
+    <string name="content_authority">com.example.admin.moviesapp</string>
+
+    <string name="hello_world">Hello world!</string>
+
 </resources>
