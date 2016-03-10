@@ -29,11 +29,13 @@ public class Utility {
     public static String getContentProviderSortOrder(Context context, String prefSortOrder) {
         if (prefSortOrder.equals(context.getString(R.string.pref_order_by_popularity))) {
             return MovieContract.MovieEntry.COLUMN_POPULARITY + " DESC";
-        } else if (prefSortOrder.equals(context.getString(R.string.pref_order_by_vote_average))) {
-            return MovieContract.MovieEntry.COLUMN_VOTE_AVERAGE + " DESC";
-        } else if (prefSortOrder.equals(context.getString(R.string.pref_order_by_favorite)))
+        }
+        if (prefSortOrder.equals(context.getString(R.string.pref_order_by_vote_average))) {
+            return MovieContract.MovieEntry.COLUMN_VOTE_AVERAGE+ " DESC";
+        }
+        if (prefSortOrder.equals(context.getString(R.string.pref_order_by_favorite)))
             return MovieContract.MovieEntry.COLUMN_FAVOURITE + " DESC";
-
+        else
         return null;
     }
 
@@ -41,12 +43,12 @@ public class Utility {
         // resolve selected action to preference sort order key value
         if (actionSortOrder.equals(context.getString(R.string.action_order_by_popularity))) {
             return context.getString(R.string.pref_order_by_popularity);
-        }  if (actionSortOrder.equals(context.getString(R.string.action_order_by_vote_average))) {
+        } else if (actionSortOrder.equals(context.getString(R.string.action_order_by_vote_average))) {
             return context.getString(R.string.pref_order_by_vote_average);
-        }  if (actionSortOrder.equals(context.getString(R.string.action_order_by_favorite))) {
+        } else if (actionSortOrder.equals(context.getString(R.string.action_order_by_favorite))) {
             return context.getString(R.string.pref_order_by_favorite);
         }
-        else
+
         return null;
     }
 
