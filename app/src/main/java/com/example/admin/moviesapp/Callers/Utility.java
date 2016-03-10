@@ -41,12 +41,12 @@ public class Utility {
         // resolve selected action to preference sort order key value
         if (actionSortOrder.equals(context.getString(R.string.action_order_by_popularity))) {
             return context.getString(R.string.pref_order_by_popularity);
-        } else if (actionSortOrder.equals(context.getString(R.string.action_order_by_vote_average))) {
+        }  if (actionSortOrder.equals(context.getString(R.string.action_order_by_vote_average))) {
             return context.getString(R.string.pref_order_by_vote_average);
-        } else if (actionSortOrder.equals(context.getString(R.string.action_order_by_favorite))) {
+        }  if (actionSortOrder.equals(context.getString(R.string.action_order_by_favorite))) {
             return context.getString(R.string.pref_order_by_favorite);
         }
-
+        else
         return null;
     }
 
